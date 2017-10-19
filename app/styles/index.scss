@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/animations";
+
+// 2. Base stuff
+// @import "base/vendors";
+@import "base/reboot";
+@import "base/grid";
+
+// 3. Components
+@import "components/Catalog";
+@import "components/Filters";
+@import "components/Modal";
+@import "components/Product";
+@import "components/Search";
+@import "components/Tag";
+
+// 4. Layout-related sections
+@import "layout/Container";
+@import "layout/Footer";
+@import "layout/Header";
+
+// 5. Page-specific styles
+// @import "pages/page-home";

@@ -1,0 +1,32 @@
+extends layout/_base
+
+append config
+  - var bodyClass = 'home'
+  - var i = 0;
+
+block content
+  main.Container
+    aside.Filters
+      div
+      .Search
+        input.Search-field(type="text")
+        button.Search-submit(type="submit") OK
+    .Catalog
+      while i < 6
+        a(href="https://gist.githubusercontent.com/johannpinson/cb050def3a6b55d9318b540eec81d882/raw/f1cff5ef352abd10ed60d47117d43361ab626ef0/demo.json").Product
+          picture.Product-image
+            source(srcset="https://dummyimage.com/100x100/" media="(max-width: 400px)")
+            img(src="https://dummyimage.com/200x200/000/fff.jpg")
+          .Product-details
+            p.Product-name
+              | Product
+              = i
+            .Product-tags
+              span.Tag
+                | #Tag
+                = i+1
+              span.Tag
+                | #Tag
+                = i+2
+            p.Product-price 20€
+        - i++

@@ -1,0 +1,16 @@
+.Tag {
+  $root: &;
+  padding: .3rem .5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: $white;
+  background: $primary;
+
+  &:hover {
+    background: rgba($primary, .8);
+  }
+
+  ~ #{$root} {
+    margin-left: 1rem;
+  }
+}

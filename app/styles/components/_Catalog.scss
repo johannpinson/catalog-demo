@@ -1,0 +1,14 @@
+.Catalog {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  @media (min-width: $mq-m) {
+    // scss-lint:disable PropertyUnits
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4rem calc((96rem - 80rem) / 3);
+    padding: 0;
+  }
+}
